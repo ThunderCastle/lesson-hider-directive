@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="directivePractice">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body ng-controller="lessonCtrl">
+    <ul>
+    <lesson-hider lesson="lesson" ng-repeat="lesson in lessons" day-alert="announceDay(lesson, day)"></lesson-hider>
+  </ul>
+
+<div class="">{{test}}
+
+</div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="lessonCtrl.js"></script>
+    <script type="text/javascript" src="lessonService.js"></script>
+    <script type="text/javascript" src="lessonHider.js"></script>
+  </body>
+</html>
